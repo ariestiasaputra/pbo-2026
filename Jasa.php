@@ -1,0 +1,17 @@
+<?php
+
+namespace Pbo\Marketplace;
+
+require_once('./PropertyConstant.php');
+
+use Pbo\Marketplace\Produk;
+
+class Jasa {
+
+    use Produk;
+    public function payment($tipe) {
+        "virtual" => "Virtual Account",
+        "qris" => "QRIS",
+        default => "Hanya bisa VA dan QRIS"
+    }
+}
