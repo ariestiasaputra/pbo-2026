@@ -26,6 +26,6 @@ echo "Pajak: ". $produk->pajak(). "%";
 echo "<br/>";
 
 echo "Total harga setelah pajak: Rp". $produk->total();
-
 echo "<br/>";
+
 echo "Metode pembayaran: ". $produk->payment("qris");
