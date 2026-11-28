@@ -10,8 +10,11 @@ class Jasa {
 
     use Produk;
     public function payment($tipe) {
-        "virtual" => "Virtual Account",
-        "qris" => "QRIS",
-        default => "Hanya bisa VA dan QRIS"
+
+        return match($tipe) {
+            "virtual" => "Virtual Account",
+            "qris" => "QRIS",
+            default => "Hanya bisa VA dan QRIS"
+        };
     }
 }
